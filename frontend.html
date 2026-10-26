@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FITS AI | Fair AI Intelligence Talent Selection for Indian Football</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              red: '#E53E3E',
+              crimson: '#9B1C1C',
+              dark: '#0A0F1D',
+              surface: '#111827',
+              accent: '#10B981',
+              neon: '#22C55E'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .grid-bg {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-[#080B14] text-slate-100 font-sans antialiased selection:bg-brand-red selection:text-white">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 inset-x-0 z-50 glass border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-red to-orange-500 flex items-center justify-center font-extrabold text-xl text-white shadow-lg shadow-brand-red/30">
+          ⚡
+        </div>
+        <div>
+          <span class="text-xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-slate-400">
+            FITS<span class="text-brand-red">.AI</span>
+          </span>
+          <span class="hidden sm:inline-block ml-2 text-xs text-slate-400 border border-slate-700 px-2 py-0.5 rounded-full">
+            Sri Sairam Engg College
+          </span>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-brand-red transition">Platform</a>
+        <a href="#demo" class="hover:text-brand-red transition">AI Assessment Demo</a>
+        <a href="#scouts" class="hover:text-brand-red transition">Scout Hub</a>
+        <a href="#code" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1.5 font-mono">
+          <i data-lucide="terminal" class="w-4 h-4"></i> Code & API
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <a href="#code" class="px-4 py-2 text-xs font-semibold rounded-lg bg-brand-red hover:bg-brand-crimson text-white transition shadow-lg shadow-brand-red/20 flex items-center gap-1.5">
+          <i data-lucide="git-branch" class="w-4 h-4"></i> Access Repo
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-32 pb-20 px-4 grid-bg overflow-hidden">
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-brand-red/20 rounded-full blur-[130px] pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-red-500/30 bg-red-950/40 text-red-300 text-xs font-semibold uppercase tracking-wider mb-6">
+        <i data-lucide="award" class="w-3.5 h-3.5 text-brand-red"></i>
+        Wadhwani Foundation Venture Viability Project
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
+        From Every Ground <br class="hidden sm:block"/>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-400 to-amber-300">
+          To A Bigger Stage.
+        </span>
+      </h1>
+
+      <p class="max-w-3xl mx-auto text-slate-300 text-base sm:text-lg mb-10 leading-relaxed font-light">
+        A standardized, bias-free computer-vision platform engineered to assess young football talent from India's rural & semi-urban areas. Democratizing scouting through AI metrics, video analytics, and transparent evaluations.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#demo" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-brand-red to-orange-600 hover:from-brand-crimson hover:to-orange-700 text-white font-bold flex items-center gap-2 shadow-lg shadow-brand-red/30 transition transform hover:-translate-y-0.5">
+          <i data-lucide="play-circle" class="w-5 h-5"></i> Try Video Evaluation
+        </a>
+        <a href="#code" class="px-7 py-3.5 rounded-xl glass hover:bg-slate-800 text-slate-200 font-semibold flex items-center gap-2 transition font-mono text-sm border border-slate-700">
+          <i data-lucide="code-2" class="w-5 h-5 text-emerald-400"></i> Get Source Code & Models
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM & SOLUTION METRICS -->
+  <section id="about" class="py-16 border-y border-slate-800 bg-slate-950/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="p-6 rounded-2xl glass border border-slate-800 hover:border-red-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-950/50 border border-red-500/20 flex items-center justify-center text-brand-red mb-4">
+            <i data-lucide="eye-off" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">The Visibility Gap</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Talented rural players miss trials due to geographical isolation, subjective scouting bias, and zero digital performance records.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl glass border border-slate-800 hover:border-emerald-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-950/50 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Computer Vision Pipeline</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Standard smartphone video assessment calculates sprint speed, agility index, ball dribble frequency, and tactical pose kinematics objectively.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl glass border border-slate-800 hover:border-blue-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-blue-950/50 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-4">
+            <i data-lucide="network" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Verified Scout Pipeline</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Academies and professional football clubs filter players by verified metrics rather than geographical or socio-economic privilege.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE AI TALENT EVALUATION DEMO -->
+  <section id="demo" class="py-20 px-4 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-3xl font-extrabold text-white mb-3">Interactive AI Assessment Simulator</h2>
+      <p class="text-slate-400 text-sm">Upload player footage or simulate an analysis using the FITS AI pre-trained scoring engine.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-8 items-start">
+      <!-- Upload Box -->
+      <div class="lg:col-span-5 p-6 rounded-2xl glass border border-slate-800">
+        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          <i data-lucide="video" class="w-5 h-5 text-brand-red"></i> Upload Drill Video
+        </h3>
+        <div id="dropzone" class="border-2 border-dashed border-slate-700 hover:border-brand-red rounded-xl p-8 text-center cursor-pointer transition bg-slate-900/40">
+          <i data-lucide="upload-cloud" class="w-12 h-12 text-slate-400 mx-auto mb-3"></i>
+          <p class="text-sm text-slate-300 font-medium">Click to select football trial drill video</p>
+          <p class="text-xs text-slate-500 mt-1">Accepts MP4, MOV (Sprint, Cones, or Juggling)</p>
+        </div>
+
+        <div class="mt-4 flex gap-2">
+          <button id="runAnalysisBtn" onclick="runSimulation()" class="w-full py-3 bg-brand-red hover:bg-brand-crimson font-bold text-sm text-white rounded-xl shadow-lg shadow-brand-red/20 transition flex items-center justify-center gap-2">
+            <i data-lucide="play" class="w-4 h-4"></i> Run AI Model Extraction
+          </button>
+        </div>
+      </div>
+
+      <!-- Assessment Output Screen -->
+      <div class="lg:col-span-7 p-6 rounded-2xl glass border border-slate-800 relative min-h-[350px]">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-4">
+          <div>
+            <h3 class="text-base font-bold text-white">Model Inference Terminal</h3>
+            <span class="text-xs font-mono text-emerald-400">● Status: Standby / Ready</span>
+          </div>
+          <span class="font-mono text-xs text-slate-400 bg-slate-800 px-2 py-1 rounded">Model: YOLO-v8 + MediaPipe Pose</span>
+        </div>
+
+        <!-- Simulated Loading State -->
+        <div id="loadingBox" class="hidden py-12 text-center">
+          <div class="inline-block animate-spin w-8 h-8 border-4 border-brand-red border-t-transparent rounded-full mb-3"></div>
+          <p class="text-sm font-mono text-slate-300">Processing video frames... 30 FPS</p>
+          <p class="text-xs text-slate-500 mt-1">Calculating joint velocity, ball-touch proximity & sprint acceleration</p>
+        </div>
+
+        <!-- Result Board -->
+        <div id="resultBox" class="space-y-4">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center">
+              <span class="text-xs text-slate-400 uppercase">Top Speed</span>
+              <p class="text-xl font-bold text-white mt-1" id="valSpeed">28.4 km/h</p>
+            </div>
+            <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center">
+              <span class="text-xs text-slate-400 uppercase">Ball Control</span>
+              <p class="text-xl font-bold text-emerald-400 mt-1" id="valControl">87 / 100</p>
+            </div>
+            <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center">
+              <span class="text-xs text-slate-400 uppercase">Agility Index</span>
+              <p class="text-xl font-bold text-amber-400 mt-1" id="valAgility">91.2</p>
+            </div>
+            <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 text-center">
+              <span class="text-xs text-slate-400 uppercase">FITS Score</span>
+              <p class="text-xl font-bold text-brand-red mt-1" id="valScore">89.4%</p>
+            </div>
+          </div>
+
+          <!-- Player Card Persona match -->
+          <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center font-bold text-lg text-slate-300">
+                TL
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">T.R. Lakshman Nikkam</h4>
+                <p class="text-xs text-slate-400">19 Yrs | Forward / Winger | Rural Cluster Candidate</p>
+              </div>
+            </div>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              Verified & Scout Ready
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CODE, REPOSITORY & DEVELOPER ACCESS -->
+  <section id="code" class="py-20 bg-slate-950 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <div class="inline-flex items-center gap-1.5 text-emerald-400 font-mono text-xs uppercase tracking-wider mb-2">
+            <i data-lucide="terminal" class="w-4 h-4"></i> Developer & Open Architecture
+          </div>
+          <h2 class="text-3xl font-extrabold text-white">Access Source Code & Models</h2>
+          <p class="text-slate-400 text-sm mt-1">Deploy the talent evaluation pipeline or integrate with scout database APIs.</p>
+        </div>
+        <div class="mt-4 md:mt-0 flex gap-3">
+          <a href="https://github.com" target="_blank" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-slate-200 border border-slate-700 flex items-center gap-2">
+            <i data-lucide="github" class="w-4 h-4"></i> Clone on GitHub
+          </a>
+          <button onclick="copyInstallCmd()" class="px-4 py-2 rounded-lg bg-emerald-600/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-600/30 text-xs font-mono flex items-center gap-2">
+            <i data-lucide="copy" class="w-4 h-4"></i> <span id="copyLabel">Copy pip install</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        
+        <!-- Code Snippet Box -->
+        <div class="glass rounded-2xl p-5 border border-slate-800 font-mono text-xs overflow-hidden">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
+            <span class="text-slate-400 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+              <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+              fits_evaluator.py
+            </span>
+            <span class="text-[11px] text-slate-500">Python 3.10+ / PyTorch</span>
+          </div>
+          <pre class="text-slate-300 overflow-x-auto p-2 leading-relaxed"><code><span class="text-purple-400">import</span> cv2
+<span class="text-purple-400">import</span> torch
+<span class="text-purple-400">from</span> fits_core <span class="text-purple-400">import</span> PoseExtractor, BallTracker, MetricsEngine
+
+<span class="text-slate-500"># 1. Initialize FITS AI Models</span>
+pose_model = PoseExtractor(weights=<span class="text-amber-300">"fits_yolo_pose.pt"</span>)
+ball_tracker = BallTracker(conf_threshold=<span class="text-amber-300">0.82</span>)
+
+<span class="text-purple-400">def</span> <span class="text-blue-400">evaluate_trial_video</span>(video_path: <span class="text-amber-300">str</span>):
+    cap = cv2.VideoCapture(video_path)
+    engine = MetricsEngine(fps=<span class="text-amber-300">30</span>, metric_standard=<span class="text-amber-300">"FIFA_YOUTH_U19"</span>)
+    
+    <span class="text-purple-400">while</span> cap.isOpened():
+        ret, frame = cap.read()
+        <span class="text-purple-400">if not</span> ret: <span class="text-purple-400">break</span>
+        
+        skeletons = pose_model.detect(frame)
+        ball_pos = ball_tracker.detect(frame)
+        engine.update(skeletons, ball_pos)
+        
+    report = engine.generate_unbiased_scorecard()
+    <span class="text-purple-400">return</span> report
+
+<span class="text-slate-500"># Output: Top speed, acceleration, touch consistency</span>
+scorecard = evaluate_trial_video(<span class="text-amber-300">"rural_trial_rec_041.mp4"</span>)
+<span class="text-blue-400">print</span>(scorecard.export_json())</code></pre>
+        </div>
+
+        <!-- API Reference / Architecture -->
+        <div class="glass rounded-2xl p-6 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <h3 class="text-base font-bold text-white mb-2 flex items-center gap-2">
+              <i data-lucide="server" class="w-4 h-4 text-emerald-400"></i> REST API Integration
+            </h3>
+            <p class="text-xs text-slate-400 mb-4">Integrate verified youth football evaluations into your Academy Management System or Club portal.</p>
+
+            <div class="space-y-3 font-mono text-xs">
+              <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+                <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold">POST</span>
+                <span class="text-slate-300 ml-2">/api/v1/assessments/upload</span>
+                <p class="text-[11px] text-slate-500 mt-1">Upload raw MP4 drill videos from mobile scouts or athletes.</p>
+              </div>
+
+              <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+                <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">GET</span>
+                <span class="text-slate-300 ml-2">/api/v1/players/{id}/scorecard</span>
+                <p class="text-[11px] text-slate-500 mt-1">Retrieve normalized percentile scores across speed, agility, and touch.</p>
+              </div>
+
+              <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+                <span class="px-2 py-0.5 rounded bg-purple-500/20 text-purple-400 text-[10px] font-bold">GET</span>
+                <span class="text-slate-300 ml-2">/api/v1/scouts/leaderboard?region=tamilnadu</span>
+                <p class="text-[11px] text-slate-500 mt-1">Query top talent filtered by age category and tactical position.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span>License: Apache 2.0 (Open Core)</span>
+            <span class="text-emerald-400">Endpoint Status: Operational</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINANCIALS & VENTURE VIABILITY (FROM SLIDES) -->
+  <section class="py-16 border-t border-slate-800 bg-slate-900/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mb-8">
+        <h2 class="text-2xl font-bold text-white">Back-of-the-Envelope Viability</h2>
+        <p class="text-xs text-slate-400">Financial projections & service provider model verified through venture analysis.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-5 glass rounded-xl border border-slate-800">
+          <span class="text-xs text-slate-400 font-mono">YEAR 1 (INR)</span>
+          <p class="text-2xl font-black text-white mt-2">₹1,50,000</p>
+          <div class="flex justify-between text-xs text-slate-400 mt-3 pt-3 border-t border-slate-800">
+            <span>Expenses: ₹1,50,000</span>
+            <span class="text-emerald-400 font-bold">Profit: ₹30,000</span>
+          </div>
+        </div>
+
+        <div class="p-5 glass rounded-xl border border-slate-800">
+          <span class="text-xs text-slate-400 font-mono">YEAR 2 (INR)</span>
+          <p class="text-2xl font-black text-white mt-2">₹3,00,000</p>
+          <div class="flex justify-between text-xs text-slate-400 mt-3 pt-3 border-t border-slate-800">
+            <span>Expenses: ₹2,00,000</span>
+            <span class="text-emerald-400 font-bold">Profit: ₹1,00,000</span>
+          </div>
+        </div>
+
+        <div class="p-5 glass rounded-xl border border-slate-800">
+          <span class="text-xs text-slate-400 font-mono">YEAR 3 (INR)</span>
+          <p class="text-2xl font-black text-white mt-2">₹6,00,000</p>
+          <div class="flex justify-between text-xs text-slate-400 mt-3 pt-3 border-t border-slate-800">
+            <span>Expenses: ₹3,50,000</span>
+            <span class="text-emerald-400 font-bold">Profit: ₹2,50,000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t border-slate-800 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="text-slate-400 font-semibold">FITS AI &bull; Fair AI Intelligence Talent Selection</p>
+        <p>Sri Sairam Engineering College, Chennai, Tamil Nadu, India &bull; Wadhwani Foundation</p>
+      </div>
+      <div class="flex space-x-6">
+        <a href="#about" class="hover:text-slate-300">About</a>
+        <a href="#code" class="hover:text-slate-300 font-mono">GitHub Repo</a>
+        <a href="#demo" class="hover:text-slate-300">Simulation</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Simulation Trigger
+    function runSimulation() {
+      const loading = document.getElementById('loadingBox');
+      const results = document.getElementById('resultBox');
+      
+      results.classList.add('opacity-30');
+      loading.classList.remove('hidden');
+
+      setTimeout(() => {
+        loading.classList.add('hidden');
+        results.classList.remove('opacity-30');
+
+        // Randomize slight variations to simulate active CV inference
+        const speed = (27.5 + Math.random() * 2.5).toFixed(1);
+        const control = Math.floor(84 + Math.random() * 10);
+        const agility = (88.0 + Math.random() * 5).toFixed(1);
+        const score = (85 + Math.random() * 8).toFixed(1);
+
+        document.getElementById('valSpeed').innerText = ${speed} km/h;
+        document.getElementById('valControl').innerText = ${control} / 100;
+        document.getElementById('valAgility').innerText = agility;
+        document.getElementById('valScore').innerText = ${score}%;
+      }, 1200);
+    }
+
+    // Copy to clipboard helper
+    function copyInstallCmd() {
+      navigator.clipboard.writeText("pip install fits-ai-engine");
+      const label = document.getElementById('copyLabel');
+      label.innerText = "Copied command!";
+      setTimeout(() => {
+        label.innerText = "Copy pip install";
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
